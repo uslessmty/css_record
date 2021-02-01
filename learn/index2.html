@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50em;
+      border: 1px solid #666;
+    }
+    th, td {
+      padding: 0.1em 1em;
+    }
+    caption {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 1em 0;
+    }
+    col {
+      border-right: 1px solid #ccc;
+    }
+    col#albumCol {
+      border: none;
+    }
+    thead {
+      border-top: 1px solid #a5a5a5;
+      border-bottom: 1px solid #a5a5a5;
+    }
+    th {
+      font-weight: normal;
+      text-align: left;
+    }
+    #playlistPosHead {
+      text-indent: -1000em;
+    }
+    .odd {
+      background-color: #edf5ff;
+    }
+  </style>
+</head>
+<body>
+  <table cellspacing='0' id='playlistTable'>
+    <caption>content</caption>
+    <colgroup>
+      <col id='PlaylistCol'>
+      <col id='trackCol'>
+      <col id='artistCol'>
+      <col id='albumCol'>
+    </colgroup>
+    <thead>
+      <tr>
+        <th id='playlistPosHead' scope="col">content</th>
+        <th scope="col">content</th>
+        <th scope="col">content</th>
+        <th scope="col">content</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class='odd'>
+        <td>content</td>
+        <td>content</td>
+        <td>content</td>
+        <td>content</td>
+      </tr>
+      <tr>
+        <td>content</td>
+        <td>content</td>
+        <td>content</td>
+        <td>content</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
