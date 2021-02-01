@@ -25,10 +25,22 @@
       padding: 5px;
       background-color: #aaa;
     }
+
+    #test3 {
+      width: 700px;
+      height: 100px;
+      position: relative;
+    }
+    #test3 .tel {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      text-align: right;
+    }
   </style>
 </head>
 <body>
-  <div>
+  <div style="overflow: hidden;">
     <!-- 测试border-box宽度计算，edge实测内容宽度为60px -->
     <div id='test0'>test0</div>
   </div>
@@ -37,6 +49,11 @@
     <div id='test1'>test1</div>
     <!-- BFC折叠上下边距测试 -->
     <div style="overflow: hidden;"><div id='test2'>test2</div></div>
+  </div>
+  <div style="overflow: hidden;">
+    <div id='test3'>
+      <p class="tel">tel: 11111111111</p>
+    </div>
   </div>
 </body>
 </html>
