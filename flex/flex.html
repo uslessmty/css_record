@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box0 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      float: left;
+    }
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 100px;
+      width: 100px;
+      border: 1px solid black;
+      float: left;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class='box0'>
+    <span class='item'>test</span>
+  </div>
+  <div class="box1">
+    <span class='item'>test</span>
+    <span class='item' style="align-self: center;">test</span>
+  </div>
+</body>
+</html>
