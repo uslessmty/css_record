@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    @keyframes myfirst
+    {
+      0%   {background: red; left:0px; top:0px;}
+      25%  {background: yellow; left:200px; top:0px;}
+      50%  {background: blue; left:200px; top:200px;}
+      75%  {background: green; left:0px; top:200px;}
+      100% {background: red; left:0px; top:0px;}
+    }
+    #d
+    {
+        display: none;
+        position:relative;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        animation: myfirst 5s;
+    }
+  </style>
+</head>
+<body>
+  <button id='btn'>btn</button>
+  <div id='d'></div>
+  <script>
+    const b = document.getElementById('btn');
+    const d = document.getElementById('d');
+    b.onclick = function() {
+      d.style.display = 'block';
+    };
+  </script>
+</body>
+</html>
