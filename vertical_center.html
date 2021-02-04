@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #d0 {
+      height: 100px;
+      width: 100px;
+      background-color: #666;
+      line-height: 100px; 
+      margin-bottom: 10px;
+    }
+    #d1 {
+      height: 100px;
+      width: 100px;
+      background-color: #666;
+      position: relative;
+      margin-bottom: 10px;
+    }
+    #d2 {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+    }
+    #d3 {
+      height: 100px;
+      width: 100px;
+      background-color: #666;
+      margin-bottom: 10px;
+    }
+    #d4 {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    #d3::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    #d5 {
+      height: 100px;
+      width: 100px;
+      background-color: #666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    #d6{
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id='d0'><span>单行</span></div>
+  <div id='d1'><div id='d2'></div></div>
+  <div id='d3'><div id='d4'></div></div>
+  <div id='d5'><div id='d6'></div></div>
+</body>
+</html>
