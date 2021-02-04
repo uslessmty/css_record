@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #test {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      border-radius: 50%;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id='test'></div>
+  <script>
+    const d = document.getElementById('test');
+    d.onclick = function(e) {
+      event.stopPropagation();
+      console.log('click');
+    }
+  </script>
+</body>
+</html>
