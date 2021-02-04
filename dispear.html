@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+      
+      background-color: #000;
+      transition: all 1s;
+      margin-bottom: 10px;
+    }
+    #d0:hover {
+      opacity: 0;
+    }
+    #d1:hover {
+      visibility: hidden;
+    }
+    #d2:hover {
+      transform: scale(0);
+    }
+    #d3:hover {
+      /* edge未生效 */
+      filter: blur(0);
+    }
+    #d4:hover {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id='d0'></div>
+  <div id='d1'></div>
+  <div id='d2'></div>
+  <div id='d4'></div>
+  <div id='d3'></div>
+</body>
+</html>
