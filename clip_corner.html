@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #content1 {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(-45deg, transparent 15px, #58a 0) no-repeat,
+        linear-gradient(45deg, transparent 15px, #58a 0) no-repeat;
+      background-size: 50% 100%;
+      background-position: 50% 0, 0 0;
+    }
+    #content2 {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, transparent 15px, #58a 0)
+        top left,
+        linear-gradient(-135deg, transparent 15px, #58a 0)
+        top right,
+        linear-gradient(-45deg, transparent 15px, #58a 0)
+        bottom right,
+        linear-gradient(45deg, transparent 15px, #58a 0)
+        bottom left;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    #content3 {
+      width: 200px;
+      height: 200px;
+      background: #58a;
+      background:
+        radial-gradient(circle at top left,
+        transparent 15px, #58a 0) top left,
+        radial-gradient(circle at top right,
+        transparent 15px, #58a 0) top right,
+        radial-gradient(circle at bottom right,
+        transparent 15px, #58a 0) bottom right,
+        radial-gradient(circle at bottom left,
+        transparent 15px, #58a 0) bottom left;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div id='content1'></div>
+  <div id='content2'></div>
+  <div id='content3'></div>
+</body>
+</html>
