@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #content1 {
+      width: 100px;
+      height: 100px;
+      transform: rotate(45deg);
+      overflow: hidden;
+      margin: 20px;
+    }
+    #content1 > img {
+      max-width: 100%;
+      transform: rotate(-45deg) scale(3.0);
+    }
+    #content2 {
+      width: 200px;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      transition: all 1s;
+    }
+    #content2:hover {
+      width: 200px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  </style>
+</head>
+<body>
+  <div id='content1'><img src="img/img_lights.jpg"></div>
+  <img src="img/img_lights.jpg" id='content2'>
+</body>
+</html>
