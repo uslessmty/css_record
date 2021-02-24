@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #content1 {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: yellowgreen;
+      background-image:
+        linear-gradient(to right, transparent 50%, #655 0);
+    }
+    #content1::before {
+      content: '';
+      display: block;
+      margin-left: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: inherit;
+      transform: rotate(.1turn);
+      transform-origin: left;
+    }
+    #content2 {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: yellowgreen;
+      background-image:
+        linear-gradient(to right, transparent 50%, #655 0);
+    }
+    #content2::before {
+      content: '';
+      display: block;
+      margin-left: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: #655;
+      transform: rotate(.1turn);
+      transform-origin: left;
+    }
+    #content3 {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: yellowgreen;
+      background-image:
+        linear-gradient(to right, transparent 50%, #655 0);
+    }
+    #content3::before {
+      content: '';
+      display: block;
+      margin-left: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: inherit;
+      transform-origin: left;
+      animation: spin 3s linear infinite,
+        bg 6s step-end infinite;
+    }
+    #content4 {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: yellowgreen;
+      background-image:
+        linear-gradient(to right, transparent 50%, #655 0);
+    }
+    #content4::before {
+      content: '';
+      display: block;
+      margin-left: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: inherit;
+      transform-origin: left;
+      animation: spin 50s linear infinite,
+        bg 100s step-end infinite;
+      animation-play-state: paused;
+      animation-delay: inherit;
+    }
+    @keyframes spin {
+      to { transform: rotate(.5turn); }
+    }
+    @keyframes bg {
+      50% { background: #655; }
+    }
+  </style>
+</head>
+<body>
+  <div id='content1'></div>
+  <div id='content2'></div>
+  <div id='content3'></div>
+  <div id='content4' style="animation-delay: -20s;"></div>
+</body>
+</html>
